@@ -44,8 +44,16 @@
 	
 		$(".box").click(function() {
 			alert("you clicked a box");
+			// $(this).hide();
+			$(this).fadeOut(100), fadeIN(100);
 		});
 			
+		$(".box").hover(function() {
+			//hover on
+		}, function() {
+			//hover off
+		});
+		
 	});
 	
 	

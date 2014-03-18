@@ -11,6 +11,12 @@
 	margin: 10px;
 	}
 	
+	.hovered {
+	height: 300px;
+	width: 300px;
+	background-color: red;
+	}	
+	
 	
 	</style>
 	
@@ -44,15 +50,22 @@
 	
 		$(".box").click(function() {
 			alert("you clicked a box");
-			// $(this).hide();
+			//$(this).hide();
 			$(this).fadeOut(1000), fadeIN(100);
 		});
 			
 		$(".box").hover(function() {
 			//hover on
+			$(this).addClass("hovered");
 		}, function() {
 			//hover off
+			$(this).removeClass("hovered");
 		});
+		
+		$(".box").html("<hi>Box</h1>");
+		
+		
+		
 		
 	});
 	

@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+	body {
+		height: 4500px;
+		background-color: #66FFCC;
+	}
+	
+		
+	</style>
+	
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+	var scroll_pos = 0;
+            $(document).scroll(function() { 
+                scroll_pos = $(this).scrollTop();
+                
+            	if(scroll_pos > 300) {
+                    $("body").css('background-color', '#66DDCC');
+                }
+                if(scroll_pos > 600) {
+                    $("body").css('background-color', '#66BBCC');
+                }
+                if(scroll_pos > 900) {
+                    $("body").css('background-color', '#6699CC');
+                }
+                if(scroll_pos > 1200) {
+                    $("body").css('background-color', '#6677CC');
+                }
+                if(scroll_pos > 1500) {
+                    $("body").css('background-color', '#6655CC');
+                }
+				if(scroll_pos > 1800) {
+                    $("body").css('background-color', '#6633CC');
+                }
+                if(scroll_pos > 2100) {
+                    $("body").css('background-color', '#6655CC');
+                }
+                if(scroll_pos > 2400) {
+                    $("body").css('background-color', '#6677CC');
+                }   
+                if(scroll_pos > 2700) {
+                    $("body").css('background-color', '#6699CC');
+                }
+                if(scroll_pos > 3000) {
+                    $("body").css('background-color', '#66BBCC');
+                }
+                if(scroll_pos > 3300) {
+                    $("body").css('background-color', '#66DDCC');
+                } 
+                if(scroll_pos > 3600) {
+                    $("body").css('background-color', '#66FFCC');
+                }
+
+                
+            });
+	</script>
+</head>
+<body>
+</body>
+</html>

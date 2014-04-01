@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+	
+	#content{
+	font-size:2pt;
+	font-family: Helvetica,sans-serif;
+	}
+	
+	
+	
+	</style>
+	
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+
+$(document).ready(function() {
+  var oldSize = parseFloat($("#content").css('font-size'));
+  var newSize = oldSize  * 6;
+  $("#content").hover(
+    function() {
+     $("#content").animate({ fontSize: newSize}, 200);
+    },
+    function() {
+    $("#content").animate({ fontSize: oldSize}, 200)
+    }
+     );
+});
+	
+	</script>
+</head>
+<body>
+<div id="content">
+I've always loved this house.<br>
+<br>
+Yes, it's a wonderful place.<br>
+<br>
+  
+The truth is, I never really<br>
+imagined I could afford it.<br>
+<br>
+  
+Well, the sellers<br>
+are very motivated now.<br>
+<br>
+  
+It's a scary decision.<br>
+<br>
+  
+I-- I never thought<br>
+I'd buy a house alone.<br>
+<br>
+  
+But, you know, I'm 36,<br>
+<br>
+  
+and I wonder what it is<br>
+I'm waiting for.<br>
+<br>
+  
+Home buying is always scary.<br>
+<br>
+  
+And with the fire and all<br>
+especially.<br>
+<br>
+  
+Well, it's a good size though,<br>
+2200 square feet,<br>
+<br>
+  
+not including<br>
+the partially finished basement.<br>
+<br>
+  
+Oh, I don't know.<br>
+<br>
+  
+I'm thinking I should go.<br>
+<br>
+  
+It's a perfect size<br>
+for someone alone.<br>
+<br>
+  
+I like it, I-I do.<br>
+<br>
+  
+I'm just really concerned<br>
+about <a href="synedoche.html"/>dying in the fire</a>.<br>
+<br>
+  
+It's a big decision<br>
+how one prefers to die.<br>
+<br>
+  
+Would you like to meet my son?<br>
+Derek.<br>
+<br>
+  
+Derek's living in the basement<br>
+since his divorce,<br>
+<br>
+  
+if that's okay.
+
+</div>
+			
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+
+<style>
+	
+.text{
+	font-size:20pt;
+	font-family: Helvetica,sans-serif;
+	float: absolute;
+	height: 50px;
+	margin: 10px;
+	padding: 10px;
+}
+
+
+</style>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.jrumble.1.3.js"></script>
+
+<script>
+
+$(function() {
+
+	$('#demo1').jrumble({
+		x: 2,
+		y: 2,
+		rotation: 1
+	});
+
+	// Demo 2
+	$('#demo2').jrumble({
+		x: 10,
+		y: 10,
+		rotation: 4
+	});
+
+	// Demo 3
+	$('#demo3').jrumble({
+		x: 4,
+		y: 0,
+		rotation: 0
+	});
+
+	// Demo 4
+	$('#demo4').jrumble({
+		x: 0,
+		y: 0,
+		rotation: 5
+	});
+
+	$('#demo1, #demo2, #demo3, #demo4').hover(function(){
+		$(this).trigger('startRumble');
+	}, function(){
+		$(this).trigger('stopRumble');
+	});
+
+});
+
+
+</script>
+
+
+</head>
+
+<body>
+
+<h1>American Craft Beer Fest</h1>
+
+
+<div id="demo1" class="text"> Am I drunk? </div>
+<div id="demo2" class="text"> Am I drunk? </div>
+<div id="demo3" class="text"> Am I drunk? </div>
+<div id="demo4" class="text"> Am I drunk? </div>
+
+
+</body>
+</html>

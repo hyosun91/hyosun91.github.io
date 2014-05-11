@@ -18,6 +18,7 @@
     width: 307px;
     height: 230px;
     border: 10px;
+    z-index: 0;
 }
 
 
@@ -27,6 +28,18 @@
     background-color: #666;
     -webkit-filter: grayscale(1);
 }
+
+#poster {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	left: 0;
+	right: 0;
+    border: 10px;
+    z-index: 3;
+}
+
 </style>
 </head>
   
@@ -36,6 +49,12 @@
      
     </video>
 </div>
+
+<div id="poster">
+	<img src="card.png" width="1000">
+	</div>
+
+
 <script>
  var video = document.querySelector("#videoElement");
  
